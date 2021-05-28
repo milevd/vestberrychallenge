@@ -27,7 +27,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/, // Transform all .js files required somewhere with Babel
+        test: /\.(js|jsx)$/, // Transform all .js files required somewhere with Babel
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -35,7 +35,7 @@ const config = {
       },
       {
         // Preprocess our own .scss files
-        test: /\.(sass|scss)$/,
+        test: /\.(sass|scss|css)$/,
         use: [{
           loader: 'style-loader', // creates style nodes from JS strings
         }, {

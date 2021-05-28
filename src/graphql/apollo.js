@@ -8,6 +8,8 @@ const cache = new InMemoryCache()
 
 const link = ApolloLink.from([httpLink])
 
+console.log(link);
+
 const client = new ApolloClient({
   link,
   cache,

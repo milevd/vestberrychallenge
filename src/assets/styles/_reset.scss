@@ -1,0 +1,59 @@
+@import "./_variables.scss";
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $primary-bg-color-dark!important;
+}
+
+html {
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: Arial;
+    font-style: normal;
+    line-height: normal;
+}
+
+span{
+    font-weight: unset;
+    font-style: unset;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+ol, ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
